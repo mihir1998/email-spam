@@ -30,5 +30,12 @@
 	</form>
 		
 	</div>
+	
+	{% if prediction == 1 %}
+	<h2>email is spam</h2>
+	{% elif prediction == 0 %}
+	<h2>Not Spam (ham)</h2>
+	{% endif %}
+	
 </body>
 </html>
