@@ -16,7 +16,7 @@ def predict():
 		message = request.form['message']
 		data = [message]
 		my_prediction = clf.predict(data)
-	return render_template('result.html',prediction = my_prediction)
+	return render_template('index.html',prediction = my_prediction)
 
 if __name__ == '__main__':
 	app.run(debug=True)
